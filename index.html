@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rain, 5 Minutes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="stage">
+  <div class="leaf l1"><svg viewBox="0 0 100 100"><path d="M50 4 C 78 22, 88 55, 50 96 C 12 55, 22 22, 50 4 Z" fill="var(--leaf-2)"/><path d="M50 10 L50 90" stroke="var(--leaf-1)" stroke-width="1.5" opacity="0.6"/></svg></div>
+  <div class="leaf l2"><svg viewBox="0 0 100 100"><path d="M50 4 C 78 22, 88 55, 50 96 C 12 55, 22 22, 50 4 Z" fill="var(--leaf-1)"/><path d="M50 10 L50 90" stroke="var(--leaf-3)" stroke-width="1.5" opacity="0.5"/></svg></div>
+  <div class="leaf l3"><svg viewBox="0 0 100 100"><path d="M50 4 C 78 22, 88 55, 50 96 C 12 55, 22 22, 50 4 Z" fill="var(--leaf-3)"/></svg></div>
+  <div class="leaf l4"><svg viewBox="0 0 100 100"><path d="M50 4 C 78 22, 88 55, 50 96 C 12 55, 22 22, 50 4 Z" fill="var(--leaf-2)"/></svg></div>
+  <div class="leaf l5"><svg viewBox="0 0 100 100"><path d="M50 4 C 78 22, 88 55, 50 96 C 12 55, 22 22, 50 4 Z" fill="var(--leaf-1)"/></svg></div>
+  <div class="leaf l6"><svg viewBox="0 0 100 100"><path d="M50 4 C 78 22, 88 55, 50 96 C 12 55, 22 22, 50 4 Z" fill="var(--leaf-3)"/></svg></div>
+  <div class="vignette"></div>
+
+  <div class="core">
+    <div class="label" id="label">rain · 5 minutes</div>
+    <div class="btn-wrap">
+      <svg class="ring" viewBox="0 0 240 240">
+        <circle class="ring-track" cx="120" cy="120" r="112"></circle>
+        <circle class="ring-progress" id="ring" cx="120" cy="120" r="112"
+          stroke-dasharray="703.7" stroke-dashoffset="703.7"></circle>
+      </svg>
+      <button class="play" id="playBtn" aria-label="Start meditation">
+        <span class="icon" id="icon">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+      </button>
+    </div>
+    <div class="time" id="time">5:00</div>
+    <div class="sub" id="sub">press play</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

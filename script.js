@@ -1,6 +1,6 @@
 (function(){
   const TOTAL = 300; // seconds
-  const FADE = 15;   // seconds
+  const FADE = 5;   // seconds
   const playBtn = document.getElementById('playBtn');
   const icon = document.getElementById('icon');
   const timeEl = document.getElementById('time');
